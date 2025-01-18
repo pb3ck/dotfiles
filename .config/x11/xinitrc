@@ -22,7 +22,7 @@ picom -b
 xset s off -dpms
 
 # Start redshift with constant temperature
-redshift -P -O 3500 &
+redshift -P -O 2790 &
 
 # Start status bar
 dwmblocks &
