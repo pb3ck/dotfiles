@@ -36,7 +36,6 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # Security tools
 export BURP_HOME="$XDG_CONFIG_HOME/burpsuite"
 export JOHN="$XDG_CONFIG_HOME/john"
-export SSH_CONFIG_DIR="$XDG_CONFIG_HOME/ssh"
 export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
 export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 
