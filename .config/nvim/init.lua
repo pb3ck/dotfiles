@@ -38,4 +38,5 @@ require("lazy").setup({
     require("plugins.ui"),
     require("plugins.tree"),
     require("plugins.notes"),
+    require("plugins.gpg"),
 })
