@@ -1,6 +1,9 @@
 #!/bin/sh
 # Configures startup programs and settings for X11 window system sessions
 
+# Clear history file on X session start
+rm -f ~/.local/state/history
+
 # Source additional environment variables
 [ -f "$XDG_CONFIG_HOME/env.conf" ] && . "$XDG_CONFIG_HOME/env.conf"
 
