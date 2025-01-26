@@ -60,8 +60,3 @@ export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
 export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
 export TMUX_CONFIG_DIR="$XDG_CONFIG_HOME/tmux"
 export TMUX_PLUGIN_MANAGER_PATH="$XDG_DATA_HOME/tmux/plugins"
-
-# Create XDG directories
-mkdir -p "$BURP_HOME" "$GNUPGHOME" "$GRADLE_USER_HOME" \
-       "$XDG_CONFIG_HOME/java" "$JOHN" "$SSL_CERT_DIR" "$SSH_CONFIG_DIR" \
-       "$XDG_CONFIG_HOME/aws" "$XDG_DATA_HOME/mongodb"
