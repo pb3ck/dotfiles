@@ -22,6 +22,8 @@ export IMAGE="nsxiv"
 export VIDEO="mpv"
 
 # Development paths
+export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export CARGO_HOME="$XDG_CONFIG_HOME/cargo"
 export GOPATH="$XDG_DATA_HOME/go"
@@ -32,10 +34,6 @@ export GEM_SPEC_CACHE="$XDG_CACHE_HOME/gem"
 export PYTHONUSERBASE="$XDG_DATA_HOME/python"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
-
-# Security tools
-export AWS_CONFIG_FILE="$XDG_CONFIG_HOME/aws/config"
-export AWS_SHARED_CREDENTIALS_FILE="$XDG_CONFIG_HOME/aws/credentials"
 
 # Build and runtime
 export GRADLE_USER_HOME="$XDG_CONFIG_HOME/gradle"
