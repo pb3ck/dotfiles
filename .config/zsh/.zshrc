@@ -46,18 +46,8 @@ zstyle ':vcs_info:git:*' formats ' [%b]'
 setopt PROMPT_SUBST
 PROMPT='%F{green}%n@%m%f:%F{blue}%~%f${vcs_info_msg_0_}$ '
 
-# Lazy load nvm - using XDG dirs from profile
-if [ -s "$NVM_DIR/nvm.sh" ]; then
-    nvm() {
-        unset -f nvm
-        # Load nvm
-        [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-        # Load bash_completion
-        [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
-        # Call nvm with original arguments
-        nvm "$@"
-    }
-fi
+# Initialize nvm
+source /usr/share/nvm/init-nvm.sh
 
 # Enable syntax highlighting (installed via pacman)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
