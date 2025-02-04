@@ -30,5 +30,8 @@ redshift -P -O 2790 &
 # Start status bar
 dwmblocks &
 
+# Configure dual monitor setup - LVDS-1 (laptop) and HDMI-2 (external) in extended mode
+xrandr --output LVDS-1 --mode 1366x768 --output HDMI-2 --mode 1920x1080 --right-of LVDS-1
+
 # Start window manager
 exec dwm
