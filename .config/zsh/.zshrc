@@ -11,7 +11,7 @@ zmodload zsh/complist
 bindkey -v
 export KEYTIMEOUT=1
 
-# History settings - using XDG dirs from profile
+# History settings
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
 setopt HIST_REDUCE_BLANKS
