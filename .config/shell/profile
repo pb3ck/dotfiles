@@ -7,9 +7,9 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
 # XDG User Directories
-XDG_DOWNLOAD_DIR="$HOME/dl"
-XDG_DOCUMENTS_DIR="$HOME/docs"
-XDG_PICTURES_DIR="$HOME/pix"
+export XDG_DOWNLOAD_DIR="$HOME/dl"
+export XDG_DOCUMENTS_DIR="$HOME/docs"
+export XDG_PICTURES_DIR="$HOME/pix"
 
 # Shell configuration
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
