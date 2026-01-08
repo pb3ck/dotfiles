@@ -1,0 +1,58 @@
+// Zellij Configuration
+// Save as ~/.config/zellij/config.kdl
+
+// Theme settings
+theme "default"
+
+// UI settings
+ui {
+    pane_frames {
+        rounded_corners true
+    }
+}
+
+// Default shell
+default_shell "bash"
+
+// Keybindings (Ctrl+t is the default prefix)
+keybinds {
+    normal {
+        // Tab management
+        bind "Ctrl t" { SwitchToMode "Tab"; }
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+        bind "Alt j" { MoveFocus "Down"; }
+        bind "Alt k" { MoveFocus "Up"; }
+    }
+
+    tab {
+        // In tab mode (after Ctrl+t)
+        bind "n" { NewTab; SwitchToMode "Normal"; }
+        bind "x" { CloseTab; SwitchToMode "Normal"; }
+        bind "r" { SwitchToMode "RenameTab"; }
+        bind "h" { GoToPreviousTab; SwitchToMode "Normal"; }
+        bind "l" { GoToNextTab; SwitchToMode "Normal"; }
+        bind "1" { GoToTab 1; SwitchToMode "Normal"; }
+        bind "2" { GoToTab 2; SwitchToMode "Normal"; }
+        bind "3" { GoToTab 3; SwitchToMode "Normal"; }
+        bind "4" { GoToTab 4; SwitchToMode "Normal"; }
+        bind "5" { GoToTab 5; SwitchToMode "Normal"; }
+    }
+
+    pane {
+        // In pane mode (for splits)
+        bind "d" { NewPane "Down"; SwitchToMode "Normal"; }
+        bind "r" { NewPane "Right"; SwitchToMode "Normal"; }
+        bind "x" { CloseFocus; SwitchToMode "Normal"; }
+        bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+    }
+}
+
+// Copy on select (similar to what you wanted)
+copy_on_select true
+
+// Mouse support
+mouse_mode true
+
+// Scrollback buffer
+scroll_buffer_size 10000

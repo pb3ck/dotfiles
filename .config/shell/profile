@@ -1,0 +1,23 @@
+#!/bin/sh
+# ~/.config/shell/profile
+# Shell environment variables and configuration
+
+# XDG Base Directory specification
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+# Shell configuration
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export HISTFILE="$XDG_STATE_HOME/history"
+export HISTSIZE=100
+
+# Default applications
+export EDITOR="nvim"
+export BROWSER="brave"
+
+# Program configs
+export _JAVA_AWT_WM_NONREPARENTING=1
+export QT_QPA_PLATFORMTHEME=gtk3
+export QT_STYLE_OVERRIDE=Fusion
